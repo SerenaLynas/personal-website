@@ -46,7 +46,7 @@ export function TypeCard(props: PropsWithChildren<{
         coderef!.current!.innerText = str;
 
         if (chars >= props.title.length + 5) {
-          contentref!.current.style.display = 'block';
+          contentref!.current.style.visibility = 'visible';
 
           clearInterval(interval);
           coderef!.current!.innerText = props.title + (isLast ? '█' : '');
@@ -77,8 +77,8 @@ export function TypeCard(props: PropsWithChildren<{
   const contentref: any = useRef(null);
 
   return <div>
-    <code ref={coderef}/>
-    <div className='hidden text-gray-800 pl-5' ref={contentref}>
+    <code className='text-ctp-mauve-950' ref={coderef}/>
+    <div className='invisible text-gray-800 pl-5' ref={contentref}>
       {props.children}
     </div>
   </div>

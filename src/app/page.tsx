@@ -1,4 +1,4 @@
-import { BookTextIcon, CodeXmlIcon, FileCode2Icon, GraduationCapIcon, HammerIcon, MonitorCogIcon, NotebookPenIcon, PcCaseIcon } from 'lucide-react';
+import { BookTextIcon, CircleUserIcon, CodeXmlIcon, CpuIcon, FileCode2Icon, GraduationCapIcon, HammerIcon, MonitorCogIcon, NotebookPenIcon, PcCaseIcon } from 'lucide-react';
 import { ExternalLink } from './external-link';
 import { TypeCard, TypeCardContainer } from './type-card';
 
@@ -34,7 +34,7 @@ export default function Home() {
               <li><strong><MonitorCogIcon className='inline'/> OS:</strong> Linux Mint and Ubuntu</li>
               <li><strong><FileCode2Icon className='inline'/> Languages:</strong> Rust, C/C++, JavaScript/TypeScript, Python, Java, LaTeX</li>
               <li><strong><BookTextIcon className='inline'/> Libraries:</strong> React, SolidJS, Embassy-rs</li>
-              <li><strong><HammerIcon className='inline'/> Tools:</strong> Git</li>
+              <li><strong><HammerIcon className='inline'/> Tools:</strong> Git, KiCad, VSCode</li>
             </ul>
           </TypeCard>
           <TypeCard title='cd case-rocket-team'>
@@ -44,9 +44,9 @@ export default function Home() {
               a LoRa radio, GPS, and barometer. The rest of the avionics subteam and I wrote the code in both Rust and C
               (using FFI).
               <ul className='list-disc list-inside pl-4 my-2'>
-                <li><strong>Languages & Libraries: </strong> Rust, C, Embassy-rs, CMSIS-DSP</li>
-                <li><strong>Hardware & Protocols: </strong> STM32H7, LoRa, USB, SPI</li>
-                <li><strong>My role: </strong> software (both robot control and React frontend)</li>
+                <li><strong><BookTextIcon className='inline'/> Languages & Libraries: </strong> Rust, C, Embassy-rs, CMSIS-DSP</li>
+                <li><strong><CpuIcon className='inline'/> Hardware & Protocols: </strong> STM32H7, LoRa, USB, SPI</li>
+                <li><strong><CircleUserIcon className='inline'/> My role: </strong> software (both robot control and React frontend)</li>
               </ul>
               After flying the
               computer on our rocket at the International Rocket Engineering Competition last summer, we are currently
@@ -57,9 +57,9 @@ export default function Home() {
             In a short 10-week internship at Los Alamos National Laboratory, I worked in a small team with mechanical
             engineering student and a controls student to build an automated prototype to mix polymer-bound high explosives.
             <ul className='list-disc list-inside pl-4 my-2'>
-              <li><strong>Languages & Libraries: </strong> Rust, TypeScript/JavaScript, React, Linux</li>
-              <li><strong>Hardware: </strong> UR16e Collaborative Robot, Raspberry Pi</li>
-              <li><strong>My role: </strong> software (both robot control and React frontend)</li>
+              <li><strong><BookTextIcon className='inline'/> Languages & Libraries: </strong> Rust, TypeScript/JavaScript, React, Linux</li>
+              <li><strong><CpuIcon className='inline'/> Hardware: </strong> UR16e Collaborative Robot, Raspberry Pi</li>
+              <li><strong><CircleUserIcon className='inline'/> My role: </strong> software (both robot control and React frontend)</li>
             </ul>
             I developed the robot control logic in Rust and built a React web interface for control and monitoring, and then
             interfaced the two using WebSockets and a REST API. The final prototype supported custom, user-defined mixing
