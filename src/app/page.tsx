@@ -37,7 +37,20 @@ export default function Home() {
               <li><strong><HammerIcon className='inline'/> Tools:</strong> Git, KiCad, VSCode</li>
             </ul>
           </TypeCard>
-          <TypeCard title='cd case-rocket-team'>
+          <TypeCard title='cd los-alamos'>
+            In a short 10-week internship at Los Alamos National Laboratory, I worked in a small team with a mechanical
+            engineering student and a controls student to build an automated prototype to mix polymer-bound high explosives.
+            <ul className='list-disc list-inside pl-4 my-2'>
+              <li><strong><BookTextIcon className='inline'/> Languages & Libraries: </strong> Rust, TypeScript/JavaScript, React, Linux</li>
+              <li><strong><CpuIcon className='inline'/> Hardware: </strong> UR16e Collaborative Robot, Raspberry Pi</li>
+              <li><strong><CircleUserIcon className='inline'/> My role: </strong> software (both robot control and React frontend)</li>
+            </ul>
+            I developed the robot control logic in Rust and built a React web interface for control and monitoring, and then
+            interfaced the two using WebSockets and a REST API. The final prototype supported custom, user-defined mixing
+            recipes via the frontend. The clients were highly impressed with the functionality and polish of the system, and
+            expressed interest in further development with the Department of Energy.
+          </TypeCard>
+          <TypeCard title='cd ../case-rocket-team'>
               <img className='h-[150px] sm:h-[300px] bg-cover bg-center rounded-lg shadow-lg float-right' src='./sirin.png'/>
               As the avionics lead of Case Rocket Team, I designed, routed, and programmed a flight computer and I
               had it produced through JLCPCB. The board features an STM32H7 processor and various instruments, including
@@ -52,19 +65,6 @@ export default function Home() {
               computer on our rocket at the International Rocket Engineering Competition last summer, we are currently
               working on a revised version for next year's competition, with new features, including sensor fusion through
               a Kalman filter.
-          </TypeCard>
-          <TypeCard title='cd ../los-alamos'>
-            In a short 10-week internship at Los Alamos National Laboratory, I worked in a small team with mechanical
-            engineering student and a controls student to build an automated prototype to mix polymer-bound high explosives.
-            <ul className='list-disc list-inside pl-4 my-2'>
-              <li><strong><BookTextIcon className='inline'/> Languages & Libraries: </strong> Rust, TypeScript/JavaScript, React, Linux</li>
-              <li><strong><CpuIcon className='inline'/> Hardware: </strong> UR16e Collaborative Robot, Raspberry Pi</li>
-              <li><strong><CircleUserIcon className='inline'/> My role: </strong> software (both robot control and React frontend)</li>
-            </ul>
-            I developed the robot control logic in Rust and built a React web interface for control and monitoring, and then
-            interfaced the two using WebSockets and a REST API. The final prototype supported custom, user-defined mixing
-            recipes via the frontend. The clients were highly impressed with the functionality and polish of the system, and
-            expressed interest in further development with the Department of Energy.
           </TypeCard>
           <TypeCard title='' />
         </TypeCardContainer>
